@@ -44,7 +44,6 @@ let songs = [];
             
             const name = document.getElementById('guestName').value;
             const attendance = document.getElementById('attendance').value;
-            const guests = document.getElementById('guests').value;
             
             if (!name || !attendance) {
                 alert('Por favor completa todos los campos obligatorios');
@@ -66,7 +65,7 @@ let songs = [];
             message += `%0A¡Muchas gracias!`;
             
             // Reemplaza con tu número de WhatsApp (formato internacional sin +)
-            const phoneNumber = '549113085-3569'; // Ejemplo: 5491112345678 para Argentina
+            const phoneNumber = '5491130853569'; // Ejemplo: 5491112345678 para Argentina
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
             
             window.open(whatsappURL, '_blank');
