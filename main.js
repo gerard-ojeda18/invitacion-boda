@@ -55,7 +55,6 @@ let songs = [];
             let message = `¡Hola! Confirmo mi asistencia a la boda:%0A%0A`;
             message += `*Nombre:* ${encodeURIComponent(name)}%0A`;
             message += `*Asistiré:* ${attendance === 'si' ? 'Sí ✓' : 'No'}%0A`;
-            message += `*Número de personas:* ${parseInt(guests) + 1}%0A`;
             
             if (songs.length > 0) {
                 message += `%0A*Canciones sugeridas:*%0A`;
