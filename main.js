@@ -67,7 +67,7 @@ let songs = [];
             message += `%0A¡Muchas gracias!`;
             
             // Reemplaza con tu número de WhatsApp (formato internacional sin +)
-            const phoneNumber = '5491136207025'; // Ejemplo: 5491112345678 para Argentina
+            const phoneNumber = '549113085-3569'; // Ejemplo: 5491112345678 para Argentina
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
             
             window.open(whatsappURL, '_blank');
