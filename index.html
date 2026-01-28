@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estás invitado a nuestra boda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="invitation-container">
+        <div class="floral-corner top-left"></div>
+        <div class="floral-corner bottom-right"></div>
+
+        <div class="header">
+            <div class="pre-title">Estás invitado a celebrar</div>
+            <h1 class="names">
+                Carol<span class="ampersand">&</span>Alex
+            </h1>
+            <div class="divider"></div>
+            <div class="closing-message">Acompañanos a ser parte de este dia tan importante en nuestras vidas...</div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=800&fit=crop" 
+                 alt="Pareja de novios" 
+                 class="hero-image">
+        </div>
+
+        <!-- Gallery -->
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&h=400&fit=crop" 
+                     alt="Momento romántico" 
+                     class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=400&fit=crop" 
+                     alt="Pareja feliz" 
+                     class="gallery-image">
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Nuestra Boda</h2>
+            
+            <div class="event-details">
+                <div class="detail-item">
+                    <div class="detail-label">Fecha</div>
+                    <div class="detail-value large">Sábado, 11 de Abril del 2026</div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="detail-label">Conferencia</div>
+                    <div class="detail-value">13:00 horas</div>
+                    <div class="detail-value">Salon del Reino</div>
+                    <div class="detail-value">Humboldt 217, Ramos mejia</div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="detail-label">Recepción</div>
+                    <div class="detail-value">20:30 horas</div>
+                    <div class="detail-value">Salón de Eventos</div>
+                    <div class="detail-value">FCB Castelli 28, Ramos mejia</div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="form-container">
+                <h2 class="section-title">Confirma tu Asistencia</h2>
+                
+                <form id="rsvpForm">
+                    <div class="form-group">
+                        <label for="guestName">Nombre completo</label>
+                        <input type="text" id="guestName" name="guestName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="attendance">¿Confirmas tu asistencia?</label>
+                        <select id="attendance" name="attendance" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">Sí, asistiré con mucho gusto</option>
+                            <option value="no">No podré asistir</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Número de acompañantes</label>
+                        <select id="guests" name="guests" required>
+                            <option value="0">Solo yo</option>
+                            <option value="1">1 acompañante</option>
+                            <option value="2">2 acompañantes</option>
+                            <option value="3">3 acompañantes</option>
+                            <option value="4">4 acompañantes</option>
+                        </select>
+                    </div>
+
+                    <div class="divider" style="margin: 40px auto;"></div>
+
+                    <div class="form-group">
+                        <label>Sugiere canciones para la fiesta</label>
+                        <div class="song-input-group">
+                            <input type="text" id="songTitle" placeholder="Título de la canción">
+                            <input type="text" id="songArtist" placeholder="Artista">
+                        </div>
+                        <button type="button" class="add-song-btn" onclick="addSong()">+ Agregar Canción</button>
+                        
+                        <div class="songs-list" id="songsList"></div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Enviar Confirmación por WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="closing-message">
+            "El amor es paciente y bondadoso. Todo lo soporta, todo lo cree, todo lo espera, todo lo aguanta. (1 Corintios 13:7)"<br>
+            ¡Esperamos celebrar este día especial contigo!
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
